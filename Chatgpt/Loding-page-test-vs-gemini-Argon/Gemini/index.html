@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Independent web design and frontend engineering studio building fast, accessible websites.">
+  <title>Vanguard Studio — Independent Web Design & Engineering</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="Vanguard Studio Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        Vanguard Studio
+      </a>
+
+      <button 
+        type="button" 
+        class="menu-toggle" 
+        id="menu-toggle" 
+        aria-expanded="false" 
+        aria-controls="primary-nav"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#work" class="nav-link">Sample Work</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#contact" class="btn btn-sm">Book a Project</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <div class="availability-badge">
+          <span class="status-dot" aria-hidden="true"></span>
+          Independent Studio &middot; Booking Q4 Projects
+        </div>
+        <h1 id="hero-heading" class="hero-title">
+          High-performance web design for focused companies.
+        </h1>
+        <p class="hero-subtitle">
+          One-person design and frontend studio. You work directly with the builder—no account managers, bloated agencies, or slow page builders.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary" id="hero-cta">Start a Project</a>
+          <a href="#work" class="btn btn-secondary">Explore Sample Work</a>
+        </div>
+        <dl class="hero-metrics" aria-label="Studio standards">
+          <div class="metric-item">
+            <dt>Core Web Vitals</dt>
+            <dd>95+ Target Score</dd>
+          </div>
+          <div class="metric-item">
+            <dt>Accessibility</dt>
+            <dd>WCAG 2.1 AA</dd>
+          </div>
+          <div class="metric-item">
+            <dt>Delivery Model</dt>
+            <dd>Direct 1-on-1</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Capabilities</p>
+          <h2 id="services-heading" class="section-title">Fixed-scope services</h2>
+          <p class="section-desc">Clear deliverables and transparent timelines tailored to your stage of growth.</p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Service Card 1 -->
+          <article class="card service-card">
+            <div class="card-top">
+              <span class="service-index">01</span>
+              <h3 class="card-title">Conversion Landing Pages</h3>
+              <p class="card-text">
+                Custom-designed, fast-loading single-page sites engineered to turn product traffic into qualified leads or signups.
+              </p>
+            </div>
+            <div class="card-bottom">
+              <ul class="feature-list" aria-label="Conversion Landing Page deliverables">
+                <li>Custom wireframe &amp; UI architecture</li>
+                <li>Responsive HTML/CSS/JS build</li>
+                <li>Technical SEO &amp; schema markup</li>
+                <li>2-week turnaround</li>
+              </ul>
+              <button type="button" class="btn btn-outline btn-full select-service-btn" data-service="landing-page">
+                Select Landing Page
+              </button>
+            </div>
+          </article>
+
+          <!-- Service Card 2 -->
+          <article class="card service-card">
+            <div class="card-top">
+              <span class="service-index">02</span>
+              <h3 class="card-title">Full Marketing Websites</h3>
+              <p class="card-text">
+                Multi-page websites with a modular component system, documentation layout, and clean content architecture.
+              </p>
+            </div>
+            <div class="card-bottom">
+              <ul class="feature-list" aria-label="Full Marketing Website deliverables">
+                <li>Up to 8 custom page templates</li>
+                <li>Reusable design token system</li>
+                <li>WCAG AA accessibility audit</li>
+                <li>4–6 week turnaround</li>
+              </ul>
+              <button type="button" class="btn btn-outline btn-full select-service-btn" data-service="full-website">
+                Select Full Website
+              </button>
+            </div>
+          </article>
+
+          <!-- Service Card 3 -->
+          <article class="card service-card">
+            <div class="card-top">
+              <span class="service-index">03</span>
+              <h3 class="card-title">Frontend &amp; Speed Audits</h3>
+              <p class="card-text">
+                Refactoring existing websites to fix layout shifts, bloated scripts, accessibility barriers, and slow mobile rendering.
+              </p>
+            </div>
+            <div class="card-bottom">
+              <ul class="feature-list" aria-label="Frontend Audit deliverables">
+                <li>Core Web Vitals remediation</li>
+                <li>Keyboard &amp; screen reader fixes</li>
+                <li>Asset &amp; CSS payload reduction</li>
+                <li>1-week turnaround</li>
+              </ul>
+              <button type="button" class="btn btn-outline btn-full select-service-btn" data-service="audit">
+                Select Audit &amp; Refactor
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="work" class="section section-alt" aria-labelledby="work-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Portfolio</p>
+          <h2 id="work-heading" class="section-title">Sample architecture &amp; concepts</h2>
+          <p class="section-desc">
+            The projects below are realistic reference builds created to demonstrate layout precision, typography, and frontend performance.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Sample Project 1 -->
+          <article class="card project-card">
+            <div class="project-preview preview-krono" role="img" aria-label="Wireframe preview of Krono Analytics interface">
+              <span class="example-badge">Example Project</span>
+              <div class="mock-ui" aria-hidden="true">
+                <div class="mock-bar"></div>
+                <div class="mock-grid">
+                  <div class="mock-box"></div>
+                  <div class="mock-box"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">B2B SaaS &middot; Marketing Site</div>
+              <h3 class="card-title">Krono Telemetry</h3>
+              <p class="card-text">
+                A high-density product landing page concept for an infrastructure monitoring tool, featuring interactive pricing tables and documentation layouts.
+              </p>
+              <button 
+                type="button" 
+                class="btn-text project-detail-btn" 
+                data-project="krono"
+                aria-haspopup="dialog"
+              >
+                Inspect Sample Specs &rarr;
+              </button>
+            </div>
+          </article>
+
+          <!-- Sample Project 2 -->
+          <article class="card project-card">
+            <div class="project-preview preview-monolith" role="img" aria-label="Wireframe preview of Monolith Press editorial layout">
+              <span class="example-badge">Example Project</span>
+              <div class="mock-ui" aria-hidden="true">
+                <div class="mock-bar"></div>
+                <div class="mock-lines">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">Digital Publishing &middot; Web App</div>
+              <h3 class="card-title">Monolith Technical Press</h3>
+              <p class="card-text">
+                An editorial storefront concept designed around long-form readability, distraction-free typography, and zero client-side framework overhead.
+              </p>
+              <button 
+                type="button" 
+                class="btn-text project-detail-btn" 
+                data-project="monolith"
+                aria-haspopup="dialog"
+              >
+                Inspect Sample Specs &rarr;
+              </button>
+            </div>
+          </article>
+
+          <!-- Sample Project 3 -->
+          <article class="card project-card">
+            <div class="project-preview preview-veridian" role="img" aria-label="Wireframe preview of Veridian Hardware product page">
+              <span class="example-badge">Example Project</span>
+              <div class="mock-ui" aria-hidden="true">
+                <div class="mock-circle"></div>
+                <div class="mock-bar"></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">Industrial Hardware &middot; Product Launch</div>
+              <h3 class="card-title">Veridian Audio Systems</h3>
+              <p class="card-text">
+                A specification-driven product showcase concept built for studio hardware, prioritizing crisp tabular data and accessible comparison views.
+              </p>
+              <button 
+                type="button" 
+                class="btn-text project-detail-btn" 
+                data-project="veridian"
+                aria-haspopup="dialog"
+              >
+                Inspect Sample Specs &rarr;
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="section" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Workflow</p>
+          <h2 id="process-heading" class="section-title">How projects run</h2>
+          <p class="section-desc">A linear, asynchronous-friendly workflow designed to respect your time.</p>
+        </div>
+
+        <ol class="process-list">
+          <li class="process-step">
+            <span class="step-number">Step 01</span>
+            <h3 class="step-title">Scope &amp; Architecture</h3>
+            <p class="step-desc">We define target user actions, page hierarchy, and content requirements in a shared specification document before touching visual design.</p>
+          </li>
+          <li class="process-step">
+            <span class="step-number">Step 02</span>
+            <h3 class="step-title">System Design &amp; Prototype</h3>
+            <p class="step-desc">Typography scales, color tokens, and responsive layouts are built directly in browser prototypes so you review real rendering, not static pictures.</p>
+          </li>
+          <li class="process-step">
+            <span class="step-number">Step 03</span>
+            <h3 class="step-title">Verification &amp; Handoff</h3>
+            <p class="step-desc">Every page is tested across screen readers, keyboard navigation, and mobile viewports before delivering clean, dependency-free source files.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt" aria-labelledby="contact-heading">
+      <div class="container contact-container">
+        <div class="contact-info">
+          <p class="eyebrow">Inquiry</p>
+          <h2 id="contact-heading" class="section-title">Start a conversation</h2>
+          <p class="section-desc">
+            Share your project goals and timeline. You will receive a direct response within two business days.
+          </p>
+          <div class="demo-notice" role="note">
+            <strong>Local Demo Notice:</strong> This form uses client-side validation only. Submitting the form validates your inputs and displays a local confirmation state without transmitting data to an external server.
+          </div>
+        </div>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name" class="form-label">Full Name <span aria-hidden="true">*</span></label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              class="form-input" 
+              autocomplete="name" 
+              required 
+              minlength="2"
+              aria-describedby="name-error"
+            >
+            <p id="name-error" class="field-error" role="alert" hidden></p>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Work Email <span aria-hidden="true">*</span></label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              class="form-input" 
+              autocomplete="email" 
+              required
+              aria-describedby="email-error"
+            >
+            <p id="email-error" class="field-error" role="alert" hidden></p>
+          </div>
+
+          <div class="form-group">
+            <label for="service" class="form-label">Service Needed <span aria-hidden="true">*</span></label>
+            <select 
+              id="service" 
+              name="service" 
+              class="form-input" 
+              required
+              aria-describedby="service-error"
+            >
+              <option value="">Select a service scope...</option>
+              <option value="landing-page">Conversion Landing Page</option>
+              <option value="full-website">Full Marketing Website</option>
+              <option value="audit">Frontend &amp; Speed Audit</option>
+            </select>
+            <p id="service-error" class="field-error" role="alert" hidden></p>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Project Scope &amp; Timeline <span aria-hidden="true">*</span></label>
+            <textarea 
+              id="message" 
+              name="message" 
+              rows="4" 
+              class="form-input" 
+              required 
+              minlength="20"
+              placeholder="Briefly describe what you are building and your target launch window..."
+              aria-describedby="message-error"
+            ></textarea>
+            <p id="message-error" class="field-error" role="alert" hidden></p>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Validate &amp; Preview Inquiry</button>
+
+          <div id="form-status" class="form-status" role="status" aria-live="polite" hidden></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; <span id="year">2026</span> Vanguard Studio. Handcrafted with plain HTML, CSS, and JS.</p>
+      <a href="#main-content" class="footer-link">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <!-- Accessible Modal Dialog for Sample Portfolio Specs -->
+  <dialog id="project-modal" class="modal" aria-labelledby="modal-title">
+    <div class="modal-inner">
+      <div class="modal-header">
+        <span class="example-badge">Example Project Specification</span>
+        <button type="button" class="modal-close" id="modal-close" aria-label="Close specification dialog">
+          &times;
+        </button>
+      </div>
+      <h3 id="modal-title" class="modal-title"></h3>
+      <p id="modal-summary" class="modal-summary"></p>
+      <dl class="modal-specs" id="modal-specs"></dl>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
