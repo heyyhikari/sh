@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solo Studio | Web Design for Small Businesses</title>
+  <meta name="description" content="One-person web design studio. Clear, fast, accessible websites for small businesses and founders.">
+  <meta name="theme-color" content="#0b0d12">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Solo Studio, back to top">Solo<span>Studio</span></a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Menu</span>
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+
+      <nav aria-label="Primary">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact" class="btn btn-small">Get a quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container">
+        <p class="eyebrow">Independent web designer &amp; developer</p>
+        <h1 id="hero-title">Websites that make your business look as good as it is.</h1>
+        <p class="lead">I design and build fast, accessible, mobile-first websites for small businesses and founders. You work directly with me, from first call to launch.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#contact">Start a project</a>
+          <a class="btn btn-ghost" href="#work">See example work</a>
+        </div>
+        <ul class="hero-points" aria-label="What you can expect">
+          <li>Direct communication, no account managers</li>
+          <li>Responsive on every screen size</li>
+          <li>Built with accessibility in mind</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <h2 id="services-title">Services</h2>
+        <p class="section-intro">Three focused offerings. Pick one or combine them.</p>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">01</div>
+            <h3>Website Design</h3>
+            <p>Custom layouts, typography and visual identity that fit your brand and guide visitors toward one clear action.</p>
+            <ul class="card-list">
+              <li>Page layouts and style guide</li>
+              <li>Mobile and desktop designs</li>
+              <li>Two revision rounds</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">02</div>
+            <h3>Development</h3>
+            <p>Clean, fast, hand-written front-end code. Semantic HTML, modern CSS and only the JavaScript your site needs.</p>
+            <ul class="card-list">
+              <li>Responsive build</li>
+              <li>Forms and interactions</li>
+              <li>Performance and basic SEO setup</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">03</div>
+            <h3>Redesign &amp; Care</h3>
+            <p>Already have a site that feels dated or slow? I refresh it and can keep it updated after launch.</p>
+            <ul class="card-list">
+              <li>Audit of your current site</li>
+              <li>Content and layout refresh</li>
+              <li>Ongoing small updates</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <h2 id="work-title">Selected work</h2>
+        <p class="section-intro">
+          <strong>These are example projects</strong> created to show my style and approach. They are not real client work.
+        </p>
+
+        <div class="grid grid-3">
+          <article class="project">
+            <div class="thumb thumb-1" role="img" aria-label="Abstract preview of a bakery website layout">
+              <span class="thumb-bar"></span><span class="thumb-block"></span><span class="thumb-line"></span><span class="thumb-line short"></span>
+            </div>
+            <div class="project-body">
+              <p class="badge">Example project</p>
+              <h3>Crumb &amp; Co. Bakery</h3>
+              <p>A warm local-business site with menu, opening hours and a simple pre-order enquiry flow.</p>
+              <p class="tags">Design · Development</p>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="thumb thumb-2" role="img" aria-label="Abstract preview of a consultant portfolio layout">
+              <span class="thumb-bar"></span><span class="thumb-block"></span><span class="thumb-line"></span><span class="thumb-line short"></span>
+            </div>
+            <div class="project-body">
+              <p class="badge">Example project</p>
+              <h3>Meridian Consulting</h3>
+              <p>A credibility-first one-pager for a freelance consultant: services, case summaries and booking call-to-action.</p>
+              <p class="tags">Design · Copy structure</p>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="thumb thumb-3" role="img" aria-label="Abstract preview of a fitness studio website layout">
+              <span class="thumb-bar"></span><span class="thumb-block"></span><span class="thumb-line"></span><span class="thumb-line short"></span>
+            </div>
+            <div class="project-body">
+              <p class="badge">Example project</p>
+              <h3>Pulse Fitness Studio</h3>
+              <p>A high-contrast, mobile-first site with class schedule, pricing tiers and a trial-session form.</p>
+              <p class="tags">Redesign · Development</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-wrap">
+        <div>
+          <h2 id="contact-title">Tell me about your project</h2>
+          <p class="section-intro">Share a few details and I'll reply with next steps. This form opens a pre-filled email in your email app. It does not send data to a server.</p>
+        </div>
+
+        <form id="contact-form" class="form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+            <p class="error" id="name-error" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error">
+            <p class="error" id="email-error" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="type">Project type</label>
+            <select id="type" name="type" required aria-describedby="type-error">
+              <option value="">Select one</option>
+              <option>New website</option>
+              <option>Redesign</option>
+              <option>Updates / maintenance</option>
+              <option>Not sure yet</option>
+            </select>
+            <p class="error" id="type-error" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required minlength="20" aria-describedby="message-error"></textarea>
+            <p class="error" id="message-error" aria-live="polite"></p>
+          </div>
+
+          <button class="btn" type="submit">Prepare email</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Solo Studio. All rights reserved.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+</body>
+</html>
