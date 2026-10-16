@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My simple personal website">
+  <title>My Website</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #111827;
+      color: #f9fafb;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1f2937;
+    }
+
+    header h2 {
+      color: #60a5fa;
+    }
+
+    nav a {
+      color: #f9fafb;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    nav a:hover {
+      color: #60a5fa;
+    }
+
+    main {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    main h1 {
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      margin-bottom: 15px;
+    }
+
+    main p {
+      color: #9ca3af;
+      max-width: 500px;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #3b82f6;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+
+    .button:hover {
+      background: #2563eb;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1f2937;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>MySite</h2>
+
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <h1>Welcome to My Website</h1>
+    <p>
+      A simple place to share my ideas, projects,
+      and journey of learning new things.
+    </p>
+    <a class="button" href="#about">Explore More</a>
+  </main>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm learning, building projects, and improving every day.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: hello@example.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> MySite. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
